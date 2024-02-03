@@ -1,7 +1,7 @@
 import React from "react";
 
 function ElectronicProducts(){
- let electronics=["mobile", "pC", "laptop", "tablet","Food"];
+ let electronics=["mobile", "pC", "laptop", "tablet","Luxury Products","Food"];
     return(
         <>
         <h1>Electronic Product List</h1>
