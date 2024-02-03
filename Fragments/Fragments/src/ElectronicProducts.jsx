@@ -1,15 +1,17 @@
 import React from "react";
 
 function ElectronicProducts(){
- let electronics=["mobile", "pC", "laptop", "tablet"];
+ let electronics=["mobile", "pC", "laptop", "tablet","Food"];
     return(
         <>
         <h1>Electronic Product List</h1>
-        <ul className='list-group'>
-    <li className="list-group-item">Mobile</li>
-    <li className="list-group-item">PC</li>
-    <li className="list-group-item">Laptop</li>
-    </ul>
+        <ul className="list-group">
+          {electronics.map((item, index) => (
+            <li key={index} className="list-group-item">
+              {item}
+            </li>
+          ))}
+        </ul>
         </>
     );
 }
