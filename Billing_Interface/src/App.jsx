@@ -1,12 +1,20 @@
+// src/App.js
+
 import React from 'react';
-import styles from './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './header';
+import BillingSoftComp from './BillingSoftComp';// Import the new component
+
 function App() {
- return (
-  <div className={styles.billingsoftware}>
-<h1>Hello World</h1>
-</div>
- );
+  const items = ['Samosa', 'VadaPav', 'PaniPuri', 'Kachori', 'Dosa','Masala Dosa'];
+
+  return (
+    <div><center>
+      <Header />
+      <BillingSoftComp items={items} /> {/* Render the new component */}
+      </center> </div>
+  );
 }
 
-export default App
+export default App;

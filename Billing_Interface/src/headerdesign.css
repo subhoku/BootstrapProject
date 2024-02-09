@@ -1,0 +1,13 @@
+.billing-header {
+    background-color: #0074d9; /* Example background color */
+    color: #ffffff; /* Example text color */
+    padding: 20px;
+    text-align: center;
+    margin-left: 502px;
+    /* Add more styles as needed */
+  }
+  
+  .billing-header h1 {
+    font-size: 24px;
+    /* Add more heading styles if desired */
+  }
