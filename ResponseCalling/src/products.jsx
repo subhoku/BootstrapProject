@@ -1,4 +1,4 @@
-function DataBinding() {
+export default function DataBinding() {
   // Products array with 3 objects
   var products = [
     {
@@ -17,10 +17,7 @@ function DataBinding() {
       Name: "Sony",
       Price: 154323.23,
     },
-    {
-      Name: "Videocon",
-      Price: 24323.23,
-    }
+    
   ];
 
   // Use map to create an array of JSX elements
@@ -39,4 +36,4 @@ function DataBinding() {
   );
 }
 
-export default DataBinding;
+
