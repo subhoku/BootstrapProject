@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from './footer';
-import EcommList from './ecommlook';
+//import ShoppingComponent from './shoppingcomponent';
+//import EcommList from './ecommlook';
+import EventBinding from './TwowayBinding';
 import Header from './header';
 import 'bootstrap/dist/css/bootstrap.min.css'
 export default function App() {
@@ -9,7 +11,7 @@ export default function App() {
   return (
     <>
 <Header/>
-   <EcommList></EcommList>
+   <EventBinding/>
   <Footer/>
    </>
   );
