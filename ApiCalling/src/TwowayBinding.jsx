@@ -10,7 +10,7 @@ function EventBinding() {
   return (
     <div>
       <label>Username</label>
-      <input type="text" onChange={handleUserName} />
+      <input type="text" onKeyUp={handleUserName} />
       <h3>Hello! {username}</h3>
     </div>
   );
