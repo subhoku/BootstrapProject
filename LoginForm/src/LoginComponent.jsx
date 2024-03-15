@@ -20,7 +20,7 @@ function LoginComponent() {
       setTheme({
         backgroundColor: "black",
         color: "white",
-        width: '350px'
+        width: "350px",
       });
     } else {
       setTheme({
@@ -30,23 +30,32 @@ function LoginComponent() {
     }
   }
 
+  // Simulated function to check if email is already taken
+  function isEmailTaken(email) {
+    // Replace with your actual logic (e.g., querying a database)
+    const existingEmails = ["sudarshan@gmail.com", "sid@gmail.com"];
+    return existingEmails.includes(email);
+  }
+
   return (
     <div className="login-form" style={theme}>
-      <h2>Login</h2>
+      <h2>Admin Login</h2>
       <form onSubmit={handleSubmit}>
-       
         <input type="text" placeholder="Username" />
         <input type="password" placeholder="Password" />
         <button type="submit">Login</button>
         <div className="form-switch">
-            For Dark Mode Click here
-        <input
+          For Dark Mode Click here
+          <input
             type="checkbox"
-            onChange={handleThemeChange}
+            onClick={handleThemeChange}
             className="form-control"
           />
-          
         </div>
+        {/* Display error message if email is already taken */}
+        {isEmailTaken("sudarshan@gmail.com") && (
+          <p style={{ color: "red" }}>Email already taken</p>
+        )}
       </form>
     </div>
   );
